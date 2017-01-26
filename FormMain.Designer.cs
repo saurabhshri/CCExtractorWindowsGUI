@@ -80,8 +80,8 @@
             this.rbBinaryVersionWithOCR = new System.Windows.Forms.RadioButton();
             this.rbBinaryVersionNoOCR = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.tbUTPListenPort = new System.Windows.Forms.TextBox();
-            this.rbInputUTP = new System.Windows.Forms.RadioButton();
+            this.tbUDPListenPort = new System.Windows.Forms.TextBox();
+            this.rbInputUDP = new System.Windows.Forms.RadioButton();
             this.butClearInputList = new System.Windows.Forms.Button();
             this.listViewInputFiles = new System.Windows.Forms.ListView();
             this.tabPageInputOptions = new System.Windows.Forms.TabPage();
@@ -979,8 +979,8 @@
             // 
             this.tabPageInput.Controls.Add(this.groupBox1);
             this.tabPageInput.Controls.Add(this.radioButton1);
-            this.tabPageInput.Controls.Add(this.tbUTPListenPort);
-            this.tabPageInput.Controls.Add(this.rbInputUTP);
+            this.tabPageInput.Controls.Add(this.tbUDPListenPort);
+            this.tabPageInput.Controls.Add(this.rbInputUDP);
             this.tabPageInput.Controls.Add(this.butClearInputList);
             this.tabPageInput.Controls.Add(this.listViewInputFiles);
             this.tabPageInput.Location = new System.Drawing.Point(8, 39);
@@ -1046,26 +1046,26 @@
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.GenericCheckedChangedHandler);
             // 
-            // tbUTPListenPort
+            // tbUDPListenPort
             // 
-            this.tbUTPListenPort.Location = new System.Drawing.Point(410, 27);
-            this.tbUTPListenPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbUTPListenPort.Name = "tbUTPListenPort";
-            this.tbUTPListenPort.Size = new System.Drawing.Size(148, 31);
-            this.tbUTPListenPort.TabIndex = 4;
-            this.tbUTPListenPort.Text = "1235";
+            this.tbUDPListenPort.Location = new System.Drawing.Point(410, 27);
+            this.tbUDPListenPort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUDPListenPort.Name = "tbUDPListenPort";
+            this.tbUDPListenPort.Size = new System.Drawing.Size(148, 31);
+            this.tbUDPListenPort.TabIndex = 4;
+            this.tbUDPListenPort.Text = "1235";
             // 
-            // rbInputUTP
+            // rbInputUDP
             // 
-            this.rbInputUTP.AutoSize = true;
-            this.rbInputUTP.Location = new System.Drawing.Point(12, 27);
-            this.rbInputUTP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.rbInputUTP.Name = "rbInputUTP";
-            this.rbInputUTP.Size = new System.Drawing.Size(392, 29);
-            this.rbInputUTP.TabIndex = 3;
-            this.rbInputUTP.Text = "Process input via UTP, listen on port";
-            this.rbInputUTP.UseVisualStyleBackColor = true;
-            this.rbInputUTP.CheckedChanged += new System.EventHandler(this.GenericCheckedChangedHandler);
+            this.rbInputUDP.AutoSize = true;
+            this.rbInputUDP.Location = new System.Drawing.Point(12, 27);
+            this.rbInputUDP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbInputUDP.Name = "rbInputUDP";
+            this.rbInputUDP.Size = new System.Drawing.Size(392, 29);
+            this.rbInputUDP.TabIndex = 3;
+            this.rbInputUDP.Text = "Process input via UDP, listen on port";
+            this.rbInputUDP.UseVisualStyleBackColor = true;
+            this.rbInputUDP.CheckedChanged += new System.EventHandler(this.GenericCheckedChangedHandler);
             // 
             // butClearInputList
             // 
@@ -4617,8 +4617,8 @@
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.RadioButton rbOutputTypeTTML;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox tbUTPListenPort;
-        private System.Windows.Forms.RadioButton rbInputUTP;
+        private System.Windows.Forms.TextBox tbUDPListenPort;
+        private System.Windows.Forms.RadioButton rbInputUDP;
         private System.Windows.Forms.GroupBox groupBoxElementaryStream;
         private System.Windows.Forms.RadioButton rbElementaryStreamSelectType;
         private System.Windows.Forms.TextBox tbElementaryStreamPID;

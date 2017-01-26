@@ -195,8 +195,8 @@ namespace CCExtractorGUI
         private string getSwitchesFromInputOptionsTab ()
         {
             string switches="";
-            if (rbInputUTP.Checked)
-                switches = switches + " -udp " + tbUTPListenPort.Text;
+            if (rbInputUDP.Checked)
+                switches = switches + " -udp " + tbUDPListenPort.Text;
             // Input type
             if (rbInputTypeAutodetect.Checked==false)
                 switches=switches+" -in="+getInputTypeString();
@@ -627,14 +627,14 @@ namespace CCExtractorGUI
                 textBoxCommandLine.Text = ccextractorexe+ " not found. It must be in the same path as this program."+Environment.NewLine+"Path: \""+ccpath+"\"";
             else
             {
-                if (listViewInputFiles.Items.Count==0 && rbInputUTP.Checked==false)             
+                if (listViewInputFiles.Items.Count==0 && rbInputUDP.Checked==false)             
                     textBoxCommandLine.Text="No input files selected.";
                 else
                 {
                     try
                     {
                         textBoxCommandLine.Text = ccpath + " " + getSwitches();
-                        if (rbInputUTP.Checked==false)
+                        if (rbInputUDP.Checked==false)
                             textBoxCommandLine.Text = textBoxCommandLine.Text +" [+input files]";
                         ready=true;
                     }

@@ -25,17 +25,17 @@ namespace CCExtractorGUI
                 TSProgramNumberList = new List<String>();
                 btnGo.Text = "Cancel";
                 int currentFile = 0;
-                while ((currentFile < listViewInputFiles.Items.Count || rbInputUTP.Checked) && !CancelProcess)
+                while ((currentFile < listViewInputFiles.Items.Count || rbInputUDP.Checked) && !CancelProcess)
                 {
                     String filename;
-                    if (rbInputUTP.Checked)
+                    if (rbInputUDP.Checked)
                         filename = "";
                     else
                         filename = listViewInputFiles.Items[currentFile].Text.ToString();
                     eState state = eState.Init; // 0=> init, 1=> wtvccdump.exe pass, 2=> ccextractorwin.exe pass, 3=> Done
                     nowRunning = true;
                     state = eState.ccextractorwin;
-                    if (state == eState.ccextractorwin && rbInputUTP.Checked)
+                    if (state == eState.ccextractorwin && rbInputUDP.Checked)
                         progressBarActivity.Visible = true;
                     else
                         progressBarActivity.Visible = false;
@@ -139,7 +139,7 @@ namespace CCExtractorGUI
                         }
                         myProcess.Close();
                     } // while (state != eState.Done)
-                    if (rbInputUTP.Checked) // Get out, there's no files here
+                    if (rbInputUDP.Checked) // Get out, there's no files here
                         break;
                 } // file loop
                 btnGo.Text = "Start";
