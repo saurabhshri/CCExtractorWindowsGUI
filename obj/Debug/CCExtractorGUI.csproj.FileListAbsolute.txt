@@ -13,3 +13,10 @@ C:\CCExtractorWindowsBinaries\Deb\Debug\CCExtractorGUI.exe.config
 C:\CCExtractorWindowsBinaries\Debug\CCExtractorGUI.exe.config
 C:\CCExtractorWindowsBinaries\Debug\CCExtractorGUI.exe
 C:\CCExtractorWindowsBinaries\Debug\CCExtractorGUI.pdb
+C:\Users\Saurabh\Documents\GitHub\CCExtractorWindowsGUI\obj\Debug\CCExtractorGUI.exe
+C:\Users\Saurabh\Documents\GitHub\CCExtractorWindowsGUI\obj\Debug\CCExtractorGUI.pdb
+C:\CCExtractorWindowsBinaries\Debug\app.config
+C:\Users\Saurabh\Documents\GitHub\CCExtractorWindowsGUI\obj\Debug\CCExtractorGUI.csprojResolveAssemblyReference.cache
+C:\Users\Saurabh\Documents\GitHub\CCExtractorWindowsGUI\obj\Debug\CCExtractorGUI.FormMain.resources
+C:\Users\Saurabh\Documents\GitHub\CCExtractorWindowsGUI\obj\Debug\CCExtractorGUI.Properties.Resources.resources
+C:\Users\Saurabh\Documents\GitHub\CCExtractorWindowsGUI\obj\Debug\CCExtractorGUI.csproj.GenerateResource.Cache
